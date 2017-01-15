@@ -5,7 +5,7 @@ tags: [Demo, About]
 author: Heiswayi Nrird
 ---
 
-This is **TextLog**, a minimalist Jekyll theme created by [Heiswayi Nrird](http://heiswayi.github.io). TextLog has a quite simple homepage; a theme with a brief introduction text (about the blog itself or the author bio) and then goes a list of written article/post titles. TextLog typeface is using [Droid Sans](https://fonts.google.com/specimen/Droid+Sans) from Google Web Font. Droid Sans is one of the best web fonts in the world for highest readability. TextLog [source code](http://github.com/heiswayi/textlog) is licensed under [MIT License](http://heiswayi.github.io/mit-license).
+This is **TextLog**, a minimalist Jekyll theme created by [Heiswayi Nrird](http://heiswayi.github.io). TextLog has a quite simple homepage; a theme with a brief introduction text (about the blog itself or the author bio) and then goes a list of written article/post titles. TextLog typeface is using [Droid Sans](https://fonts.google.com/specimen/Droid+Sans) from Google Web Font. Droid Sans is one of the best web fonts in the world for highest readability. TextLog [source code](https://github.com/heiswayi/textlog) is licensed under [MIT License](http://heiswayi.github.io/mit-license).
 
 TextLog post layout contains following structures:
 
