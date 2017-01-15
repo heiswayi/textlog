@@ -1,0 +1,14 @@
+# Site settings
+title: TextLog
+baseurl: "" # begin with /repo-name if use as project, else leave empty for gh-pages
+url: "" # default is empty
+
+# Build settings
+kramdown:
+  input: GFM
+permalink: pretty
+
+# Third-party services
+# just leave empty to disable it
+google_analytics:
+disqus_shortname:

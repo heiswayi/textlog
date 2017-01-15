@@ -1,0 +1,119 @@
+/**
+ * Site header
+ */
+.site-header {
+    border-bottom: 1px solid $grey-color-light;
+    margin-top: -2rem;
+    max-width: 48rem;
+}
+
+.smallcap {
+    text-transform: lowercase;
+    font-variant: small-caps;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    a,
+    a:hover {
+        text-decoration: none;
+    }
+}
+/**
+ * Page content
+ */
+.page-content {
+    position: relative;
+    padding: $spacing-unit ($spacing-unit * 0.75);
+    margin: 1rem;
+    box-sizing: border-box;
+}
+/**
+ * Pages
+ */
+.home {
+    section + section {
+        margin-top: $spacing-unit;
+    }
+}
+
+.post-list > li {
+    margin-bottom: $spacing-unit / 4;
+    list-style-type: none;
+    margin-left: -2rem;
+
+    a,
+    a:hover {
+        color: $text-color;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    time {
+        font-size: $small-font-size;
+        color: $grey-color;
+    }
+    @include media-query($on-palm) {
+        time {
+            display: block;
+            font-size: $small-font-size;
+        }
+    }
+}
+
+.tag-title {
+    color: $link-color;
+}
+/**
+ * Posts
+ */
+.post-header {
+    margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    font-size: 2rem;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+.post-content {
+    margin-bottom: $spacing-unit;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 2rem;
+    }
+
+    h1,
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    h5,
+    h6 {
+        font-size: 1rem;
+    }
+}
+
+.back {
+    display: block;
+    font-size: $small-font-size;
+    margin-bottom: 1rem;
+}

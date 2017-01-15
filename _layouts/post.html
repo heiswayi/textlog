@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <span class="back">&larr; <a href="{{ site.baseurl }}/">Index</a></span>
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %d, %Y" }}</time>
+      {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
+
+      {% assign post = page %}
+  		{% if post.tags.size > 0 %}
+
+  		{% assign tags_content = "" %}
+  		{% for post_tag in post.tags %}
+  			{% capture tags_content_temp %}
+  				{{ tags_content }}<a href="{{ site.url }}{{ site.baseurl }}/tagged#{{ post_tag | slugify }}">#{{ post_tag }}</a>
+  			{% endcapture %}
+  			{% assign tags_content = tags_content_temp %}
+  		{% endfor %}
+
+  		•	<span class="tags" itemprop="tags">{{ tags_content }}</span>
+
+  	  {% endif %}
+
+    </p>
+  </header>
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+
+    <p>[<a href="#top">Back to Top</a>]</p>
+  </div>
+  {% include disqus.html %}
+</article>
