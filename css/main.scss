@@ -7,13 +7,14 @@
 $base-font-family: 'Droid Sans', sans-serif;
 $code-font-family: Inconsolata, Monaco, Consolas, monospace;
 $base-font-size:   16px;
-$base-font-weight: 400;
+$base-font-weight: 300;
 $small-font-size:  0.875rem;
 $base-line-height: 1.5;
 
 $spacing-unit:     2rem;
+$max-width:        48rem;
 
-$text-color:       #111;
+$text-color:       #333;
 $background-color: #fff;
 $link-color:       #0645ad;
 
@@ -23,7 +24,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
 $on-palm:          600px;
-$on-:        800px;
+$on-:              800px;
 
 // Use media queries like this:
 // @include media-query($on-palm) {

@@ -3,7 +3,6 @@ layout: default
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
-    <span class="back">&larr; <a href="{{ site.baseurl }}/">Index</a></span>
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %d, %Y" }}</time>
@@ -28,8 +27,9 @@ layout: default
   </header>
   <div class="post-content" itemprop="articleBody">
     {{ content }}
-
-    <p>[<a href="#top">Back to Top</a>]</p>
   </div>
-  {% include disqus.html %}
+  <hr>
+  {% if page.comment %}
+    {% include disqus.html %}
+  {% endif %}
 </article>

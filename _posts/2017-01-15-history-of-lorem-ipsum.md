@@ -2,6 +2,7 @@
 layout: post
 title: History of Lorem Ipsum
 tags: [Demo, Lorem Ipsum]
+comment: true
 ---
 
 ### What is Lorem ipsum?
