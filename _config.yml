@@ -6,9 +6,9 @@ url: "" # default is empty
 author: "wersfz"
 
 # Build settings
-kramdown:
-  input: GFM
-permalink: pretty
+#kramdown:
+#  input: GFM
+#permalink: pretty
 
 # Third-party services
 # just leave empty to disable it
