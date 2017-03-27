@@ -1,10 +1,9 @@
 # Site settings
-title: "TextLog"
-description: "Minimalist Jekyll theme for documentation"
+title: "AAAAAA"
+description: "BBBBBBBBB"
 baseurl: "" # begin with /repo-name if use as project, else leave empty for gh-pages
 url: "" # default is empty
 author: "wersfz"
-name:"wersfz"
 
 # Build settings
 kramdown:
