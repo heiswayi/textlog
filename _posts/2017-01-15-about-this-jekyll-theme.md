@@ -1,18 +1,20 @@
 ---
 layout: post
-title: About TextLog - Minimalist, distraction-free and content-focused Jekyll theme
-tags: [Demo, About]
+title: About this Jekyll theme
+tags: [Demo, Jekyll]
 author: Heiswayi Nrird
 comment: true
 ---
 
-TextLog is a minimalist, distraction-free and content-focused Jekyll theme. TextLog uses [Droid Sans](https://fonts.google.com/specimen/Droid+Sans) typeface from Google Web Fonts. TextLog also supports [Disqus comment](https://disqus.com/) and [tags](https://heiswayi.github.io/textlog/tagged/)
+Textlog is a minimalist, lefty-style Jekyll theme designed for documentation based blog.
 
-TextLog post layout contains following structures:
+- Content-focused post layout
+- Using system fonts like GitHub - no Google Fonts
+- Supports article tagging
+- White clean design
+- Contains intro section on homepage
+- Supports comment if enabled - using [Disqus comment](https://disqus.com/)
+- Responsive and mobile-friendly
+- Post can have specific author name displayed on post metadata - apply via yaml front matter
 
-- the post title
-- the post metadata such as date, author name and clickable post tags
-- the post content
-- [Disqus comment](https://disqus.com/) if enabled
-
-TextLog is responsive and mobile-friendly.
+[Source code on GitHub](https://github.com/heiswayi/textlog)
