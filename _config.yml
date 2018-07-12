@@ -1,7 +1,7 @@
 # Site settings
 title: "TextLog"
-description: "Minimalist Jekyll theme for documentation"
-baseurl: "/textlog"
+description: "Minimalist Jekyll theme for documentation site"
+baseurl: "/textlog" # required if used under gh-pages branch, else (under master branch) just leave empty/blank
 url: ""
 author: "John Doe"
 
@@ -13,4 +13,7 @@ permalink: pretty
 # Third-party services
 # just leave empty to disable it
 google_analytics:
-disqus_shortname: hnbloggithub
+disqus_shortname: 
+
+plugins:
+  - jekyll-sitemap

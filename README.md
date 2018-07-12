@@ -1,13 +1,13 @@
-# TextLog v1.1
+# TextLog
 
-TextLog is a minimalist, distraction-free and content-focused Jekyll theme. TextLog uses [Droid Sans](https://fonts.google.com/specimen/Droid+Sans) typeface from Google Web Fonts. TextLog alspo supports [Disqus comment](https://disqus.com/) and [tags](https://heiswayi.github.io/textlog/tagged/).
+> Textlog is a minimalist, lefty-style Jekyll theme designed for documentation based blog.
 
-[**Live Demo**](https://heiswayi.github.io/textlog)
+[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![GENERATOR](https://img.shields.io/badge/made_with-jekyll-blue.svg) ![VERSION](https://img.shields.io/badge/current_version-1.5-green.svg)
 
-### Screenshot
+- **Demo:** https://heiswayi.github.io/textlog/
 
-![TextLog Screenshot](http://i.imgur.com/StRXiZt.png)
+![SCREENSHOT](https://i.imgur.com/yXqbM4S.png)
 
-### License
+## License
 
 [MIT](LICENSE.md)

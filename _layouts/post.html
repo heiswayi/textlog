@@ -6,7 +6,7 @@ layout: default
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %d, %Y" }}</time>
-      {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
+      {% if page.author %} &middot; <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
 
       {% assign post = page %}
   		{% if post.tags.size > 0 %}
@@ -19,7 +19,7 @@ layout: default
   			{% assign tags_content = tags_content_temp %}
   		{% endfor %}
 
-  		•	<span class="tags" itemprop="tags">{{ tags_content }}</span>
+  		&middot;	<span class="tags" itemprop="tags">{{ tags_content }}</span>
 
   	  {% endif %}
 

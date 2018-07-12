@@ -1,3 +1,36 @@
+.underlined {
+    flex: 1;
+    text-decoration: none;
+    background-image: linear-gradient(to right, yellow 0, yellow 100%);
+    background-position: 0 1.2em;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: background .5s;
+    &:hover, {
+        background-size: 100% 100%;
+    }
+    &--thin {
+        background-image: linear-gradient(to right, black 0, black 100%);
+    }
+    &--thick {
+        background-position: 0 -0.1em;
+    }
+    &--offset {
+        background-position: 0 0.2em;
+        //didn't find another solution than mask the underline shape by a box shadow with the same color than the bg
+        box-shadow: inset 0 -.5em 0 0 white;
+    }
+    &--gradient {
+        background-position: 0 -0.1em;
+        background-image: linear-gradient(to right, yellow 0, lightgreen 100%);
+    }
+    &--reverse {
+        background-position: 100% -0.1em;
+        transition: background 1s; //yep, that's a long link
+        background-image: linear-gradient(to right, yellow 0, yellow 100%);
+    }
+}
+
 /**
  * Site header
  */
@@ -7,6 +40,9 @@
     max-width: $max-width;
     p {
       font-size: $small-font-size;
+    }
+    .site-intro {
+        font-size: $big-font-size;
     }
 }
 
@@ -53,16 +89,21 @@
     list-style-type: none;
     margin-left: -2rem;
 
-    a,
-    a:hover {
+    a {
         color: $text-color;
-        font-weight: bold;
         text-decoration: none;
+        font-weight: normal;
+
+        &:hover {
+            color: $link-color;
+            text-decoration: underline;
+        }
     }
 
     time {
         font-size: $small-font-size;
         color: $grey-color;
+        display: inline-block;
     }
     @include media-query($on-palm) {
         time {
@@ -92,14 +133,22 @@
 
 .post-meta {
     font-size: $small-font-size;
+    font-family: $code-font-family;
     color: $grey-color;
     a, a:visited {
       color: $grey-color-dark;
+    }
+    .tags {
+        a, a:visited {
+            background: $grey-color-light;
+            padding: 0.1rem 0.5rem;
+        }
     }
 }
 
 .post-content {
     margin-bottom: $spacing-unit;
+    font-weight: normal;
 
     h1,
     h2,
@@ -108,6 +157,7 @@
     h5,
     h6 {
         margin-top: 2rem;
+        font-weight: normal;
     }
 
     h1,
@@ -132,6 +182,7 @@
 .copyright {
   margin-top: $spacing-unit;
   font-size: $small-font-size;
+  font-family: $code-font-family;
   p {
     color: $grey-color;
     a, a:visited {

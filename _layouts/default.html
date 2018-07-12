@@ -5,7 +5,7 @@
     <div class="page-content">
       {{ content }}
       <div class="copyright">
-        <p>&copy; {{ site.time | date: '%Y' }} <a href="{{ site.baseurl | prepend: site.url }}" title="{{ site.description }}"><strong>{{ site.title }}</strong></a> ― <a href="http://github.com/heiswayi/textlog" title="a minimalist Jekyll theme for documentation">Textlog theme</a> by <a href="http://heiswayi.github.io">Heiswayi Nrird</a></p>
+        <p>&copy; {{ site.time | date: '%Y' }} <a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}"><strong>{{ site.title }}</strong></a> ― Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/heiswayi/textlog">Textlog theme</a></p>
       </div>
     </div>
     {% include google_analytics.html %}
