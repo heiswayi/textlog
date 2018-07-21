@@ -18,4 +18,4 @@ disqus_shortname:
 plugins:
   - jekyll-sitemap
 
-exclude: [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script"]
+exclude: ["LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script"]
