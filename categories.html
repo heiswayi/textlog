@@ -1,0 +1,28 @@
+---
+layout: default
+title: Categories
+---
+
+<div class="home">
+	<section class="site-header">
+		<h1 class="smallcap"><a class="site-title" href="{{ '/' | prepend: site.baseurl | prepend: site.url }}">{{ site.title }}</a></h1>
+		<p>All categories posts will be sorted here.</p>
+	</section>
+
+	<section>
+    {% for tag in site.categories %}
+    <h2 class="tag-title" id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+    <ul class="post-list">
+      {% for post in tag[1] %}
+        <a class="" href="{{ site.baseurl }}{{ post.url }}">
+      <li>
+        {{ post.title }},
+      <time>{{ post.date | date_to_string }}</time>
+      </li>
+      </a>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+	</section>
+
+</div>
